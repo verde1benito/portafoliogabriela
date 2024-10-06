@@ -1,0 +1,251 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/*Variables*/
+:root{
+    --normal-font:400;
+    --bold-font:900;
+    --bg-color:#CDC1FF;
+    --primary-color:#7F669D;
+    --secondary-color:#9b4976;
+    --primary-shadow:#b982cf;
+    --secondary-shadow: #B1AFFF;
+    --bottom-margin:0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height:1.7rem;
+    --transition: 0.3s;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+    color:var(--primary-color);
+}
+a:hover{
+    color:var(--secondary-color);
+}
+nav{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav h1{
+    color:var(--primary-color);
+}
+nav ul{
+    display: flex;
+    gap: 1.9rem;
+}
+nav ul li{
+    font-weight: var(--bold-font);
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+.hero img{
+    height: 37.5rem;
+    width: 37.5;  
+}
+.bio{
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 15px 2px var(--primary-shadow);
+}
+.bio h2{
+    margin: var(--bottom-margin);
+}
+
+.bio p{
+    line-height: var(--line-height);
+    padding: 0.3rem;
+}
+
+/*More About*/
+
+.more-about {
+    padding: 1rem 6rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.more-about h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+/*More About ends*/
+
+/*Skills section*/
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.skill-header{
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img{
+    padding: 1.25rem;
+}
+
+.icon{
+    width: 11.975rem;
+    height: 11.25rem;
+}
+
+/* General styles for the projects section */
+.projects {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Container styling */
+.projects-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card styling */
+.project-card {
+    width: 300px;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image styling */
+.project-pic {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Project title and details styling */
+.project-title {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.project-details {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Link styling */
+.project-link {
+    text-decoration: none;
+    color: #6a0dad; /* Purple color */
+    font-weight: bold;
+    align-self: flex-start;
+    margin-top: auto;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #9b4fcc;
+}
+
+.skills {
+    padding: 2rem; /* Espacio alrededor de la sección */
+    text-align: center; /* Centrar el texto */
+}
+
+.skill-header {
+    font-size: 2rem; /* Tamaño del encabezado */
+    margin-bottom: 1.5rem; /* Espacio debajo del encabezado */
+}
+
+.skills-wrapper {
+    display: flex; /* Usar flexbox para alinear los íconos */
+    flex-direction: column; /* Cambiar la dirección a columna para crear filas */
+    align-items: center; /* Centrar los elementos en el eje horizontal */
+}
+
+.first-set, .second-set {
+    display: flex; /* Usar flexbox para los conjuntos de íconos */
+    justify-content: center; /* Centrar los íconos dentro de cada conjunto */
+    margin: 1rem; /* Espacio entre los conjuntos */
+}
+
+.icon-card {
+    margin: 0.5rem; /* Espacio entre los íconos */
+}
+
+.icon {
+    width: 100px; /* Tamaño de los íconos ajustado a 100px */
+    height: 100px; /* Mantener el tamaño igual en altura */
+}
+
+.gif-section {
+    text-align: right;          /* Alinear el contenido a la derecha */
+    margin: 2rem 0;            /* Espacio arriba y abajo */
+}
+
+.gif-image {
+    width: 100px;               /* Ajustar el ancho del GIF (cambiar según tus preferencias) */
+    height: auto;               /* Mantener la proporción del GIF */
+}
+
+
+footer {
+    background-color: #9b4fcc; /* Color de fondo oscuro */
+    color: #ffffff;            /* Color del texto */
+    text-align: center;        /* Centrar el texto */
+    padding: 1rem 0;          /* Espaciado arriba y abajo */
+    position: relative;        /* Posición relativa para un posible uso futuro */
+    bottom: 0;                 /* Mantener en la parte inferior */
+    width: 100%;               /* Ancho completo */
+    font-size: 1rem;           /* Tamaño de fuente */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil en la parte superior */
+}
+
+footer p {
+    margin: 0;                 /* Eliminar márgenes por defecto */
+}
